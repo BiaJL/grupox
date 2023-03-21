@@ -9,12 +9,6 @@ Integrantes do grupo Grupo
 - <a href = "https://github.com/FernandaSena07"> Fernanda Sena </a>
 - <a href = "https://github.com/leocaje"> Leonardo Cajé</a>
 
-### Fatec ZL - Centro Paula Souza 
-### # Disciplina - Programação Web III 
-Grupo X 
-- Joaquim da Silva Xavier 
-- Jose Bonifacio 
-- Isabel Cristina Leopoldina 
 ##### Processo de Desenvolvimento de Software - PDS
 > O PDS segue uma abordagem interativa incremental adaptada do Scrum. Cada interação tem uma definição de pronto estabelecida com objetivo de controlar a qualidade. 
 ##### Estudo de Caso – SOCIELOO
@@ -86,18 +80,6 @@ ClienteRepository -->> ClienteServiceI: List[]
 ClienteServiceI-->> APIClienteController: List[] 
 APIClienteController -->> Usuario: JSon[] 
 ``` 
-
-
-```mermaid
-sequenceDiagram 
-BEATRIZ ->> APIClienteController: GET /api/v1/clientes 
-APIClienteController ->> ClienteServiceI: consultaTodos ( ) 
-ClienteServiceI ->> ClienteRepository: findAll ( ) 
-ClienteRepository -->> ClienteServiceI: List[] 
-ClienteServiceI-->> APIClienteController: List[] 
-APIClienteController -->> Usuario: JSon[] 
-```
-
 
 >Referencias 
 - [1] KRUCHTEN, Philippe. Reference: Title: Architectural blueprints—the “4+ 1” view model of software architecture. IEEE software, v. 12, n. 6, 1995. 
