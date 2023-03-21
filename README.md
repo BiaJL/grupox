@@ -40,12 +40,22 @@ Integrantes do grupo Grupo
 é estabelecido pelo identificador do caso de teste.
 > 2) Depois de executado os casos de teste com 100% de satisfatorios o código deve ser armazenado no github (commit). 
 ##### Casos de teste 
-| Identificador | Cenário de uso | 
-| ------------ | ------------------------------------------------------------------------ | 
-| REQ01CT01 | Dado (setup) que o CPF do cliente não está cadastrado; Quando (ação) o usuário confirma o cadastro; Então (resultado esperado) o sistema envia uma mensagem de cadastro realizado com sucesso | 
-| REQ01CT02 | Dado (setup) que o CPF do cliente está cadastrado; Quando (ação) o usuário confirma o cadastro; Então (resultado esperado) o sistema rejeita e envia uma mensagem de dados inválidos | 
-> 
-O modelo de dominio (Larman, 2006 - classes conceituais ou classes de negócio) foi definido considerando as seguintes classes: 
+| Identificador | Cenário de uso |
+| ------------ | ------------------------------------------------------------------------ |
+| REQ01CT01 | **Dado que** – A ONG/Instituição/Projeto social não está cadastrada;<br> **Quando**   – O usuário solicitar cadastro de ação social;<br> **Então** – O sistema envia os dados cadastrais para a aprovação do moderador. Se as informações estiverem completas e os dados checarem, é enviada uma mensagem para a ONG indicando que o cadastro foi concluído com sucesso e a ONG recebe uma Página de ONG publicada no site.  |
+| REQ01CT02 | **Dado que** – A ONG/Instituição/Projeto social não está cadastrada;<br> **Quando**   – O usuário solicitar cadastro de ação social;<br>  **Então** – O sistema envia os dados de cadastro para a aprovação do moderador. Se houver informações faltando e/ou incongruentes, o moderador veta o cadastro e a publicação da Página de ONG. É enviada uma mensagem, para a ONG, informando quais dados faltam e/ou apresentam incongruências e solicitando sua correção, para posterior avaliação. |
+| REQ02CT01 | **Dado que** – A ONG/Instituição/Projeto Social CNPJ 62.823.257/0001-09 está cadastrado;<br>**Quando**   - o usuário solicitar uma consulta pelo CNPJ;<br>**Então** – o sistema apresenta os detalhes da ONG´s/Instituições/Projetos Sociais cadastrado|
+| REQ03CT01 | **Dado que** – A ONG/Instituição/Projeto Social;<br> **Quando**   – Quer alterar seus dados de ONG/Instituição/Projeto Social;<br> **Então** – O sistema envia uma mensagem para a ONG/Instituição/Projeto Social comunicando que os dados foram atualizados|
+| REQ03CT02  | **Dado que** – A ONG/Instituição/Projeto Social;<br>**Quando**   – Quer alterar seus dados de ONG/Instituição/Projeto Social;<br>**Então** – O sistema envia uma mensagem para a ONG/Instituição/Projeto Social comunicando que houve uma falha na tentativa de atualizar os dados cadastrais |
+| REQ04CT01  | **Dado que** – A ONG foi excluída do site;<br>**Quando**   (ONG/Instituição/Projeto Social) – tiver solicitado a remoção de cadastro;<br>**Então** – A ONG é informada, via mensagem pop-up, de que seu cadastro foi excluído com sucesso;<br>**Quando**   (Moderador/Administrador) – tiver optado por remover o cadastro de uma ONG;<br>**Então** – A ONG recebe uma notificação, via e-mail, de que seu cadastro foi removido do site, informando o devido motivo da exclusão  |
+| REQ05CT01 | **Dado que** – O usuário não está cadastrado;<br>**Quando**   – O usuário solicitar o cadastro de doador;<br> **Então** – O sistema envia uma mensagem de cadastro concluído com sucesso |
+| REQ05CT02 | **Dado que** – O usuário não está cadastrado;<br>**Quando**   – O usuário cadastrar o e-mail com o código de validação errado;<br> **Então** - O sistema não validará o cadastro e mostrará uma mensagem de erro |
+| REQ06CT01 | **Dado que** – O usuário de nome João Pedro de Souza está cadastrado;<br>**Quando**   - o usuário solicitar uma consulta pelo NOME;<br> **Então** – o sistema apresenta os detalhes do usuário cadastrado  |
+| REQ07CT01 | **Dado que** – O usuário;<br> **Quando**   – Quer alterar seus dados de Usuário;<br> **Então** – O sistema envia uma mensagem para o usuário comunicando que os dados foram atualizados.|
+| REQ07CT02 | **Dado que** – O usuário;<br>  **Quando**   – Quer alterar seus dados de Usuario;<br> **Então** – O sistema envia uma mensagem para o usuário comunicando que houve uma falha na tentativa de atualizar os dados cadastrais|
+| REQ08CT01 | **Dado que** – O usuário foi excluído do site;<br> **Quando**   (ONG/Instituição/Projeto Social) – tiver solicitado a remoção de cadastro;<br>**Então** – O usuário recebe uma notificação, via e-mail, de que seu cadastro foi removido do site. |
+| REQ13CT01| **Dado que** – o usuário está cadastrado;<br> **Quando**  - Inserir a opção de “Esqueci a senha”;<br> **Então**- Sistema envia um link para redefinição de senha no e-mail cadastrado|
+| REQ14CT01 | **Dado que** – o usuário não esteja logado;<br> **Quando**   – For escrever um comentário;<br> **Então** - O sistema irá pedir para que faça o login ou cadastre uma conta para comentar. |
 
 ![Diagrama de classes - socieloo ENG - Diagrama de classe](https://user-images.githubusercontent.com/99555037/226616730-d7baffe5-9504-4466-956c-0b75252f9d3d.jpeg)
 
