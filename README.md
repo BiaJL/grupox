@@ -5,7 +5,7 @@ Integrantes do grupo Grupo
 - <a href = "https://github.com/ademiralves"> Ademir Alves </a>
 - <a href = "https://github.com/Aryel15"> Aryel Anne </a>
 - <a href = "https://github.com/BiaJL"> Bianca Jesus </a>
-- <a href = "https://github.com/DiogoLCarvalho"> Diogo de Carvalho </a>
+- <a href = "https://github.com/DiogoLCarvalho"> Diogo Carvalho </a>
 - <a href = "https://github.com/FernandaSena07"> Fernanda Sena </a>
 - <a href = "https://github.com/leocaje"> Leonardo Cajé</a>
 
@@ -17,26 +17,29 @@ Grupo X
 - Isabel Cristina Leopoldina 
 ##### Processo de Desenvolvimento de Software - PDS
 > O PDS segue uma abordagem interativa incremental adaptada do Scrum. Cada interação tem uma definição de pronto estabelecida com objetivo de controlar a qualidade. 
-##### Estudo de Caso – Sistema Integrado de Gestão 
-> No contexto do projeto interdisciplinar o estudo de caso tem como objetivo desenvolver e implantar um Sistema Integrado de Gestão de Vendas e Suprimentos. 
-Os seguintes requisitos foram identificados na primeira reunião com o cliente (RU – Requisito de Usuário). O resultado da análise conclui que será possível implementar 
-o projeto no semestre com grupos de alunos atuando como programadores. O maior risco identificado é a falta de tempo para reunião do time de desenvolvimento e estudo 
-do projeto. O grupo deve definir estratégias para mitigar o risco de dificuldades com a linguagem de programação, identificando membros do grupo com problemas na 
-programação, selecionando videoaulas, referência bibliográficas, para melhora a produtividade do time. 
+##### Estudo de Caso – SOCIELOO
+> No contexto do projeto interdisciplinar o estudo de caso tem como objetivo desenvolver e implantar um site centralizador de ONGs, instituições e projetos sociais da cidade de São Paulo, com o propósito de divulgá-las a possíveis doadores e voluntários e criar, assim, um ELO entre ONGs e a sociedade. O diferencial do site é a maior flexibilidade do usuário para a escolha de Projetos sociais com a localização e segmento de sua preferência, podendo favoritar, analisar e avaliar cada projeto.
 ##### Product Backlog 
 - RU01 - Compras - Registra e acompanha os processos de compras na organização, prevê a entrega programada de pedidos de compra 
 - RU02 - Recebimento - Registra, controla e informa sobre a entrada de mercadorias e integra as informações dos dados da nota fiscal de entrada com o estoque 
 - RU03 - Vendas – Registra e acompanha as vendas mantendo as informações integradas com o controle de estoque. 
 ##### Sprint Backlog 
 > Cada requisito tem um identificador único de maneira que seja possível rastrear a necessidade do cliente com a implementação do software. 
+> 
 | Identificador | Descrição | Prioridade | 
 | ------------ | ------------------------------------------------------------------------ | ------| 
-| REQ01 – cadastrar cliente | Como – vendedor, Eu quero – cadastrar o cliente, De maneira que – seja possível identificar o cliente e o endereço de entrega para confirmar uma venda| Média | 
-| REQ02 – consultar cliente por ID| Como – vendedor, Eu quero – consultar um cliente pelo ID, De maneira que – seja possível obter informações detalhas do cliente | Alta | 
-| REQ03 – consultar cliente por CPF | Como – vendedor, Eu quero – consultar um cliente, De maneira que – seja possível obter informações detalhas do cliente | Alta | 
-| REQ04 – consultar todos os clientes | Como – vendedor, Eu quero – consultar todos os clientes cadastrado, De maneira que – seja possível obter uma lista de clientes | Baixa | 
-| REQ05 – corrigir informações de cliente | Como – vendedor, Eu quero – corrigir as informações do cliente, De maneira que – seja possível manter as informações atualizadas | Baixa | 
-| REQ06 – excluir cliente | Como – vendedor, Eu quero – excluir um cliente, De maneira que – seja possível manter informações somente de clientes ativos | Baixa | 
+| REQ01 – Cadastrar ONGs/Instituições/Projetos Sociais | Como – ONG/Instituição/Projeto Social, Eu quero – Cadastrar no site a ação social no site, De maneira que – Seja possível criar um perfil próprio para o projeto (Página de ONG)| Alta |
+| REQ02 – Consultar ONGs/Instituições/Projetos Sociais | Como – Usuário, Eu quero – Consultar uma ONG´s/Instituições/Projetos Sociais, De maneira que – Seja possível obter informações sobre a ONG´s/Instituições/Projetos Sociais como descrição textual, sua história, imagens, informações de contato e de doação e mapa de localização. | Alta |
+| REQ03 – Atualizar ONGs/Instituições/Projetos Sociais | Como – ONG´s/Instituições/Projetos Sociais, Eu quero – Alterar os dados da ONG/Instituição/Projeto Social, De maneira que – Seja possível atualizar informações de ONG/Instituição/Projeto Social, nos casos de mudanças de endereço, informações de contato, imagens e localização. | Média |
+| REQ04 – Excluir ONGs/Instituições/Projetos Sociais | Como – ONG/Instituição/Projeto Social OU Moderador/Administrador, Eu quero (se ONG/Instituição/Projeto Social) – Excluir meu cadastro e minha Página de ONG do site, De maneira que – Meus dados não sejam mais divulgados pelo site. Eu quero (se Moderador/Administrador) – Excluir o cadastro de uma ONG e sua Página de ONG do site, De maneira que – As informações publicadas por aquele projeto não estivessem mais disponíveis no site | Média |
+| REQ05 – Cadastrar Usuário | Como – Usuário, Eu quero – Fazer um cadastro de usuário no site, De maneira que – Seja possível criar um perfil próprio para favoritar ONG’s por segmento e região, avaliar ONG’s e preencher formulários de ONG’s | Alta |
+| REQ06 – Consultar Usuário | Como – ONG/Instituição/Projeto Social OU Moderador/Administrador, Eu quero – Consultar o perfil de um usuário, De maneira que – Seja possível obter informações sobre o usuário e bloquear ou excluir o seu perfil, se necessário | Baixa |
+| REQ07 – Atualizar Usuário | Como – Usuário, Eu quero – Alterar seus dados de Usuário, De maneira que – Seja possível atualizar informações de usuário | Média |
+| REQ08 – Excluir Usuário | Como – Usuário OU Moderador/Administrador, Eu quero (se Usuário) – Excluir meu cadastro e meu perfil de usuário, De maneira que – Meus dados não sejam mais divulgados pelo site. Eu quero (se Moderador/Administrador) – Excluir o cadastro de um usuário do site, De maneira que – As informações daquele usuário não estiverem mais disponíveis no site | Média |
+| REQ09 – Login de ONGs e usuários | Como – Usuário, Eu quero – Fazer doações, pesquisar ações sociais, avaliar e comentar, De maneira que – Possa consultar e atualizar o perfil de usuário | Alta |
+| REQ10 – Fazer Avalições | Como - Usuário, Eu quero – Escrever comentários, De maneira que – Seja possível criar comentários em perfis de ONGs | Média |
+| REQ11 – Excluir Avaliações | Como – Moderador, Eu quero – Excluir comentários, De maneira que – Possa retirar comentários ofensivos e ou de conteúdo impróprio  | Média |
+
 ##### Definição de pronto 
 > O sprint será considerado concluido quando: 
 > 1) Os casos de teste de aceitação forem executados e obtiverem 100% de satisfatorios. Os casos de teste (CT) são rastreáveis para os requisiitos (REQ). O elo de rastreabilidade 
@@ -49,7 +52,9 @@ programação, selecionando videoaulas, referência bibliográficas, para melhor
 | REQ01CT02 | Dado (setup) que o CPF do cliente está cadastrado; Quando (ação) o usuário confirma o cadastro; Então (resultado esperado) o sistema rejeita e envia uma mensagem de dados inválidos | 
 > 
 O modelo de dominio (Larman, 2006 - classes conceituais ou classes de negócio) foi definido considerando as seguintes classes: 
-![modelo de dominio](https://user-images.githubusercontent.com/68782201/160412338-54c2c974-d6d2-4ab6-bea5-e1137a6f7e6c.jpg) 
+
+![Diagrama de classes - socieloo ENG - Diagrama de classe](https://user-images.githubusercontent.com/99555037/226616730-d7baffe5-9504-4466-956c-0b75252f9d3d.jpeg)
+
 A arquitetura segue uma abordagem orientada a serviços. Os serviços foram classificados em três tipos (ERL, 2007): 
 - **1. Serviços utilitários**. Implementam funcionalidades comuns a vários tipos de aplicações, como, por exemplo: log, notificação, transformação de informações. Um exemplo de serviço utilitário é um serviço de conversão de moeda que 
 poderá ser acessado para calcular a conversão de uma moeda (por exemplo, dólares) para outra (por exemplo, euros). 
